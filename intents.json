@@ -1,0 +1,219 @@
+{"intents":[
+    {"tag":"greeting",
+    "patterns":["Hello","Hi","Hey","How are you?","Is anyone there?"],
+    "responses":["Hello!","Hi","Hie!","I'm good!How are you?","Yes I'm here!How may I help you?"],
+    "context_set":""
+},
+
+{"tag": "goodbye",
+"patterns": ["Bye", "See you later", "Goodbye", "I'm busy"],
+"responses": ["See you later!", "Goodbye!", "Okay then, I'll talk to you later"],
+"context_set": ""
+},
+
+{"tag": "name",
+"patterns": ["What is your name?","Tell me your name","Who are you?","May I know your name?","What's your name?"],
+"responses": ["I'm HoriChat, your friendly AI assistant!","You can call me HoriChat, your virtual buddy!","I'm HoriChat, here to help you!","Just your helpful AI companion, HoriChat!","I'm HoriChat, always ready to assist!"],
+"context_set": ""
+},
+
+{"tag": "emergency_contact",
+"patterns": ["Emergency contact?","Help me in an emergency","How to reach emergency services?","I need immediate help","Help me in an emergency","How to reach emergency services?","I need immediate help","Contact numbers for police, fire, or ambulance"],
+"responses": ["Visit 'Emergency Contact' for immediate assistance.","Check the 'Emergency Contact' page for quick support.","Find emergency services in the 'Emergency Contact' section.","In case of fire, call 101.","For ambulance or medical emergency, dial 102.","Disaster Management: 108.","Women’s Helpline: 1091.","Child Helpline: 1098.","For all emergencies, dial 112."],
+"context_set": ""
+},
+
+{"tag": "help",
+"patterns": ["Help me","I need help","How can I help you?","Can you please help me?"],
+"responses": ["How can I assist you today?","What do you need help with?","Yes I'm here!How may I help you?"],
+"context_set": ""
+},
+
+{"tag": "navigation",
+"patterns": ["How do I go to home?","Navigate to donations","Open emergency contact","Where is the resources page?"],
+"responses": ["Click on the 'Home' link in the navbar.","You can find 'Donations' in the top navigation bar.","Go to 'Emergency Contact' from the navbar menu.","Navigate to 'Resources' from the main navigation menu."],
+"context_set": ""
+},
+
+{"tag": "hover_effects",
+"patterns": ["What happens when I hover over a link?","Do you have hover effects?","Is there any hover animation?","Link color change on hover?"],
+"responses": ["When you hover over a link, the color changes to #F4D35E.","Yes, links have a smooth hover effect that changes color.","Hovering over navigation links makes them turn yellowish."],
+"context_set": ""
+},
+
+{"tag": "donation",
+"patterns": [ "How can I donate?","Where do I donate?", "Donation options", "I want to contribute", "Make a donation"],
+"responses": ["You can donate by filling out the form on our 'Donations' page.","Visit the 'Donations' section to support our cause.","Fill in your details and choose a payment method to donate securely." ],
+"context_set": ""
+},
+
+{"tag": "payment_methods",
+"patterns": ["What payment methods do you accept?","Can I donate using UPI?","Do you support credit card donations?","Payment options for donation","Can I donate through bank transfer?"],
+"responses": ["We accept Debit Card, Credit Card, UPI, and Bank Transfers.","You can donate using UPI, debit/credit card, or through a bank transfer.","Choose your preferred payment method while filling out the donation form."],
+"context_set": ""
+},
+
+{ "tag": "minimum_donation",
+ "patterns": [ "Is there a minimum donation amount?","How much is the minimum contribution?","What is the smallest amount I can donate?","Minimum amount to donate"],
+"responses": ["The minimum donation amount is ₹1.","You can donate as little as ₹1 to support our cause.","There is no maximum limit, but the minimum contribution is ₹1."],
+"context_set": ""
+},
+
+{"tag": "donation_confirmation",
+"patterns": ["Will I get a confirmation after donating?","Do you send donation confirmation mails?","How do I know if my donation was successful?","Donation confirmation message"],
+"responses": ["Yes, you will receive a confirmation mail after a successful donation.","You will get a donation confirmation mail in your registered email.", "A confirmation message will be displayed once your donation is processed."],
+"context_set": ""
+},
+
+{"tag": "specialized_emergency",
+"patterns": ["Poison control number?","Mental health helpline?","Road accident emergency?","Coastal guard contact?"],
+"responses": ["Poison Control: 1800-11-6969.","Mental Health Helpline: 91-22-2772-6771.","Road Accidents Emergency: 1033.","Coastal Guard Emergency: 1093."],
+"context_set": ""
+},
+
+{"tag": "health_safety",
+"patterns": ["Health ministry emergency?","Blood bank contact?","Dial-a-Doctor number?","Anti-doping agency helpline?"],
+"responses": ["Medical Emergency – Health Ministry: 1075.","Blood Bank Information: 104.","Dial-a-Doctor: 1552.","National Anti-Doping Agency: 91-11-24361513."],
+ "context_set": ""
+},
+
+{"tag": "government_helplines",
+"patterns": ["Prime Minister’s grievance redressal?","Consumer helpline?", "Central Vigilance Commission contact?", "Government support contact?" ],
+"responses": ["Prime Minister’s Grievance Redressal: 1800-11-0101.","Consumer Helpline: 1800-11-4000 / 14404.","Central Vigilance Commission: 011-26165729."],
+"context_set": ""
+},
+
+{"tag": "natural_disaster",
+"patterns": ["Disaster management contact?","Earthquake emergency number?","Flood and cyclone helpline?","Natural calamity support?" ],
+"responses": ["National Disaster Management Authority: 1078.","Earthquake Emergency: 011-23822720 / 23822721.","Floods and Cyclone Warning: 191."],
+"context_set": ""
+},
+
+{"tag": "utility_transport",
+"patterns": ["Railway accident helpline?","Electricity outage contact?","Water supply emergency?","Gas leak emergency?"],
+"responses": ["Railway Enquiry/Accident Reporting: 139.","Electricity Outage: Varies by state.","Water Supply Emergency: Varies by state.","Gas Leak Emergency (LPG Gas): 19123."],
+"context_set": ""
+},
+
+{"tags": "general_emergency",
+"patterns":["I need help","Emergency numbers","Who do I call in an emergency?","Give me emergency contacts"],
+"responses":["Here are some general emergency numbers:\n🚓 Police: 100\n🔥 Fire Department: 101\n🚑 Ambulance: 102\n🌪️ Disaster Management: 108\n🆘 National Emergency Helpline: 112"],
+"context_set":""
+},
+
+{"tags": "women_child_help",
+"patterns":["Help for women","Women helpline","Child helpline number","What is the helpline for children?"],
+"responses":["You can contact:\n👩 Women’s Helpline: 1091\n👶 Child Helpline: 1098"],
+"context_set":""
+},
+
+{"tags": "mental_health",
+"patterns":["I need mental health support","Mental health emergency","Is there a number for mental health help?"],
+"responses":["You can call the Mental Health Helpline at 📞 91-22-2772-6771"],
+"context_set":""
+},
+
+{"tags": "poison_control",
+"patterns":["Poison emergency","What if someone is poisoned?","Poison control number"],
+"responses":["Contact Poison Control at ☠️ 1800-11-6969"],
+"context_set":""
+},
+
+{"tags": "road_accident",
+"patterns":["I saw a road accident","Accident emergency number"],
+"responses":["For road accidents, dial 🚧 1033"],
+"context_set":""
+},
+
+{"tags": "coastal_guard",
+"patterns":["Sea emergency","Who to call for coastal issues?"],
+"responses":["You can reach Coastal Guard Emergency at 🚤 1093"],
+"context_set":""
+},
+
+{"tags": "health_safety",
+"patterns":["Health emergency","Doctor on call","Medical help"],
+"responses":["Here are health contacts:\n🩸 Blood Bank Info: 104\n👨‍⚕️ Dial-a-Doctor: 1552\n🛡️ Health Ministry Emergency: 1075\n🏃 Anti-Doping: 91-11-24361513"],
+"context_set":""
+},
+
+
+{"tags": "other_contacts",
+"patterns":["Gas leak number","Railway accident number","Electricity outage","Water emergency"],
+"responses":["Other Useful Contacts:\n🚆 Railway Emergency: 139\n⚡ Electricity/Water Outage: Varies by state\n💨 Gas Leak (LPG): 19123"],
+"context_set":""
+},
+
+{"tags": "greeting",
+"patterns": ["hi", "hello", "hey", "good day", "greetings"],
+"responses": ["Hello! Welcome to Local Volunteer Connect. How can I help you today?"],
+"context_set": ""
+},
+
+{"tags": "volunteer_register",
+"patterns": ["I want to register as a volunteer", "how can I volunteer?", "sign up to help", "register to help", "join as a volunteer"],
+"responses": ["Great! Please provide your Name, Location, Skills (optional), Phone Number, and Email. Then click 'Register'."],
+"context_set": "registering_volunteer"
+},
+    
+{"tags": "volunteer_info",
+"patterns": ["what info do I need to register?", "what should I fill in the volunteer form?", "volunteer form details"],
+"responses": ["You'll need to provide your Name, Location, Skills, Phone Number, and Email address."],
+"context_set": ""
+},
+    
+{"tags": "victim_request",
+"patterns": ["I need help", "find volunteers", "I'm a victim", "I need assistance", "help me find volunteers near me"],
+"responses": ["Please enter your location and click on 'Find Volunteers'. We'll list nearby registered helpers."],
+"context_set": "finding_volunteer"
+},
+
+{"tags": "map",
+"patterns": ["show me the map", "where is the help located?", "view on map"],
+"responses": ["You can view nearby volunteers on the map below the page."],
+"context_set": ""
+},
+
+{"tag": "weather_current",
+"patterns": ["What's the weather like now?", "Current weather", "Show current weather", "Weather at my location"],
+"responses": ["Fetching current weather for your location..."],
+"context_set": ""
+},
+      
+{"tag": "weather_city",
+"patterns": ["Weather in Delhi","Show Mumbai weather","Give me weather update for London","Is it raining in New York?","Sydney forecast"],
+"responses": ["Getting weather alerts for the selected city..."],
+"context_set": ""
+},
+
+{"tag": "location_detected",
+"patterns": ["Did you detect my location?", "What is my location?", "Location found?"],
+"responses": ["Detecting your location, please wait..."],
+"context_set":""
+},
+
+{"tag": "no_alert",
+"patterns": ["Any alerts?", "Weather alert", "Is there a storm?", "Tell me about alerts"],
+"responses": ["No weather alerts currently. Stay safe!"],
+"context": ""
+},
+
+{"tag": "get_weather_button",
+"patterns": ["Get Weather", "Check weather", "Show weather", "Fetch weather"],
+"responses": ["Please wait while we fetch the weather for your selected location..."],
+"context": ""
+},
+    
+{"tags": "thanks",
+"patterns": ["thank you", "thanks", "appreciate it", "thank you so much"],
+"responses": ["You're welcome! Stay safe.", "Glad to help. Let us know if you need anything else."],
+"context_set": ""
+},
+    
+{"tags": "goodbye",
+"patterns": ["bye", "goodbye", "see you", "exit", "talk later"],
+"responses": ["Goodbye! Take care and feel free to come back if you need help."],
+"context_set": ""
+}
+
+]}

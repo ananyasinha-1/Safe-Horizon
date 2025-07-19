@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Volunteer Connect</title>
+  <link rel="stylesheet" href="voulenteer.css" />
+</head>
+<body>
+
+  <h1>Local Volunteer Connect</h1>
+
+  <!-- Volunteer Registration -->
+  <section id="volunteer-section">
+    <h2>Register as a Volunteer</h2>
+    <form id="volunteer-form">
+      <input type="text" id="volunteer-name" placeholder="Your Name" required />
+      <input type="text" id="volunteer-location" placeholder="Your Location" required />
+      <input type="text" id="volunteer-skills" placeholder="Skills (e.g., First Aid, Shelter)" />
+      <input type="tel" id="volunteer-phone" placeholder="Phone Number" required />
+      <input type="email" id="volunteer-email" placeholder="Email Address" required />
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Victim Request Help -->
+  <section id="victim-section">
+    <h2>Need Help? Find Volunteers</h2>
+    <form id="victim-form">
+      <input type="text" id="victim-location" placeholder="Your Location" required />
+      <button type="submit">Find Volunteers</button>
+    </form>
+    <div id="volunteers-list"></div>
+  </section>
+
+  <script src="voulenteer.js"></script>
+</body>
+</html>

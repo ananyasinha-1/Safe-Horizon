@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="lognsig.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <h1 style="font-size: 48px;">Sign Up</h1>
+    <div class="signup-box">
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="separator">
+            <hr>
+            <span>OR</span>
+            <hr>
+        </div>
+        <div class="google-signup">
+            <div id="g_id_onload"
+                data-client_id="315169636718-dfp0rtkp3p9fe7ebtaon4n8qj79kb2mo.apps.googleusercontent.com"
+                data-context="signup"
+                data-ux_mode="popup"
+                data-callback="handleCredentialResponse"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin" data-type="standard"></div>
+        </div>
+        </div>
+
+        </script>
+        <p class="para-2">Don't have an account ? <a href="login.html">Login here</a></p>
+    </div>
+    <script>
+        function handleCredentialResponse(response) {
+            console.log("Google ID Token:", response.credential);
+            // Here, you can send the token to your backend for verification
+        }
+    </script>
+</body>
+</html>

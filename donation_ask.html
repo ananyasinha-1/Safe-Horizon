@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request a donation</title>
+  <link rel="stylesheet" href="donation_ask.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1>Request a Donation</h1>
+      <p>Fill out the form below to request support.</p>
+      <form>
+        <label for="full-name"><strong>Full Name:</strong></label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <!-- Replaced 'Email' with 'Reason' -->
+        <label for="reason"><strong>Reason:</strong></label>
+        <input type="text" id="reason" name="reason" required>
+
+        <label for="amount"><strong>Donation Amount (₹):</strong></label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="payment"><strong>Payment Method:</strong></label>
+        <select id="payment" name="payment" required>
+          <option value="">Select</option>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <option value="upi">UPI</option>
+          <option value="netbanking">Net Banking</option>
+        </select>
+
+        <button type="submit" class="btn-submit">Submit Request</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

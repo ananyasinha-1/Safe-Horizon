@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="lognsig.css">
+    <!-- Google Sign-In SDK -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div class="login-box">
+        <h1 style="font-size: 48px;">Log In</h1>
+        <form>
+            <input type="text" placeholder="Phone number, username, or email" required>
+            <input type="password" placeholder="Password" required>   
+            <button type="submit">Log In</button>
+        </form>
+
+        <div class="separator">
+            <hr>
+            <span>OR</span>
+            <hr>
+        </div>
+
+        <!-- Google Sign-In Button -->
+        <div id="g_id_onload"
+             data-client_id="315169636718-dfp0rtkp3p9fe7ebtaon4n8qj79kb2mo.apps.googleusercontent.com"
+             data-context="signin"
+             data-ux_mode="popup"
+             data-callback="handleCredentialResponse"
+             data-auto_prompt="false">
+        </div>
+
+        <div class="google-login">
+            <div class="g_id_signin" data-type="standard"></div>
+        </div>
+    
+        <div class="sign-up">
+            <p>Don't have an account? 
+                <button><a href="signup.html">Sign Up</a></button></p>
+        </div>
+
+        <!-- Display user info after login -->
+        <div id="user-info" style="display:none; margin-top:20px;">
+            <img id="user-image" src="" alt="User Image" style="border-radius:50%; width:50px;">
+            <p id="user-name"></p>
+            <p id="user-email"></p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+<script>
+    function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+            const data = parseJwt(response.credential);
+            document.getElementById("user-image").src = data.picture;
+            document.getElementById("user-name").textContent = "Welcome, " + data.name;
+            document.getElementById("user-email").textContent = data.email;
+            document.getElementById("user-info").style.display = "block";
+        }
+
+        function parseJwt(token) {
+            let base64Url = token.split('.')[1];
+            let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            let jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+            return JSON.parse(jsonPayload);
+        }
+
+        function logout() {
+            document.getElementById("user-info").style.display = "none";
+        }
+    </script>
+</body>
+</html>

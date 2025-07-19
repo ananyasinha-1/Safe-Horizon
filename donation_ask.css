@@ -1,0 +1,100 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  /* Centered container for the form */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  /* Box around the form */
+  .form-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  
+  /* Subheading */
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Label for each form field */
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+  
+  /* Input and select fields */
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Submit button */
+  .btn-submit {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #218838;
+  }
+  
+  /* Sticky footer button */
+  .footer-btn {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Style for 'Want donation? Click here' */
+  .donation-link {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .donation-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .donation-link a:hover {
+    text-decoration: underline;
+  }
+  

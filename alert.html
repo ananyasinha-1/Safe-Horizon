@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Alerts</title>
+    <link rel="stylesheet" href="alert.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌦️ Weather Alerts</h2>
+
+    <!-- Location Selection -->
+    <p id="locationMessage">Detecting your location...</p>
+    <label for="locationSelect">Choose Location:</label>
+
+    <select id="locationSelect">
+        <option value="current">📍 Current Location</option>
+        <option value="Delhi">Delhi, India</option>
+        <option value="Mumbai">Mumbai, India</option>
+        <option value="London">London, UK</option>
+        <option value="New York">New York, USA</option>
+        <option value="Sydney">Sydney, Australia</option>
+        <option value="Ahmedabad">Ahmedabad, India</option>
+        <option value="Bangalore">Bangalore, India</option>
+        <option value="Chennai">Chennai, India</option>
+        <option value="Hyderabad">Hyderabad, India</option>
+        <option value="Kolkata">Kolkata, India</option>
+        <option value="Pune">Pune, India</option>
+        <option value="Jaipur">Jaipur, India</option>
+        <option value="Surat">Surat, India</option>
+        <option value="Lucknow">Lucknow, India</option>
+        <option value="Kanpur">Kanpur, India</option>
+        <option value="Nagpur">Nagpur, India</option>
+        <option value="Visakhapatnam">Visakhapatnam, India</option>
+        <option value="Hazaribagh">Hazaribagh, India</option> 
+    </select>
+
+    <button onclick="fetchWeatherAlerts()">Get Weather</button>
+
+    <!-- Loading and alert boxes -->
+    <div id="loading" class="loading" style="display: none;">Loading weather data...</div>
+    
+    <div id="alertBox" class="alert" style="display: none;">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-content">
+            <div class="alert-title">Weather Alert</div>
+            <div class="alert-details">No alerts currently.</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="alert.js"></script>
+
+</body>
+</html>
