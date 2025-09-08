@@ -1,16 +1,14 @@
 import mysql.connector
 
-# Connect to MySQL database
 conn = mysql.connector.connect(
     host="localhost",
     user="user",
-    password="lion@23cs",
+    password="#password",
     database="volunteer_connect"
 )
 
 cursor = conn.cursor()
 
-# Sample volunteer data (replace with form inputs)
 volunteer_data = {
     "name": input("Enter your name: "),
     "location": input("Enter your location: "),
@@ -18,7 +16,7 @@ volunteer_data = {
     "phone": input("Enter your phone number: "),
     "email": input("Enter your email:")
 }
-# Insert volunteer into database
+
 insert_query = """
 INSERT INTO volunteers (name, location, skills, phone, email)
 VALUES (%s, %s, %s, %s, %s)
@@ -36,3 +34,4 @@ print("Volunteer registered successfully!")
 
 cursor.close()
 conn.close()
+
