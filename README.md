@@ -1,2 +1,2 @@
 # Safe-Horizon
-Safe Horizon: Disaster management website
+Safe Horizon: Disaster management website.
