@@ -53,3 +53,15 @@ It integrates **weather alerts, emergency contacts, AI chatbot support, donation
 - Users can send feedback or queries
 
 ---
+
+## 📂 Project Structure
+Safe-Horizon/
+│── static/ # CSS, JS, images
+│── templates/ # HTML pages
+│── intents.json # Chatbot intents
+│── model.tflearn # Trained ML model
+│── data.pickle # Training data
+│── app.py # FastAPI backend
+│── alert.js # Weather API logic
+│── chathorizon.js # Chatbot frontend logic
+│── README.md
