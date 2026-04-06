@@ -57,6 +57,7 @@ It integrates **weather alerts, emergency contacts, AI chatbot support, donation
 ## 📂 Project Structure
 Safe-Horizon/
 │── static/ # CSS, JS, images
+
 │── templates/ # HTML pages
 │── intents.json # Chatbot intents
 │── model.tflearn # Trained ML model
