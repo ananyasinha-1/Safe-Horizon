@@ -74,3 +74,11 @@ Safe-Horizon/
 │── chathorizon.js # Chatbot frontend logic
 
 │── README.md
+
+💡 Use Cases:
+1. Disaster preparedness
+2. Emergency response systems
+3. Smart alert platforms
+4. AI-powered assistance systems
+5. Community-driven rescue coordination
+
